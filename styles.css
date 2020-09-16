@@ -1,0 +1,41 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Utilidades */
+.header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+
+.fw-900{
+    font-weight: 900;
+}
+
+/* Python */
+
+.python-header h3{
+    color: darkgrey;
+}
+
+.python-header img{
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Java */
+
+.java-header img {
+    width: 200px;
+    height: 100px;
+}
