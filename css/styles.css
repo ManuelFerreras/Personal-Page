@@ -1,12 +1,27 @@
 body {
     font-family: 'Lato', sans-serif;
+    background: #262626;
+    color: white;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* Utilidades */
+.centrar-texto{
+    text-align: center;
+}
+
 .header {
     margin-top: 50px;
     display: flex;
     align-items: center;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .fw-400{
@@ -19,6 +34,221 @@ body {
 
 .fw-900{
     font-weight: 900;
+}
+
+.margin-top {
+    margin-top: 70px;
+}
+
+/* Page Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header img {
+    height: 108px;
+    width: 108px;
+    border-radius: 50%;
+}
+
+.main-header ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.radious {
+    border-radius: 40%;
+}
+
+.main-header ul li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.main-header ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-header ul li::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.main-header ul li:nth-child(1):before {
+    background: #4267B2;
+}
+
+.main-header ul li:nth-child(2):before {
+    background: #1DA1F2;
+}
+
+.main-header ul li:nth-child(3):before {
+    background: #E1306C;
+}
+
+.main-header ul li:nth-child(4):before {
+    background: #FF0000;
+}
+
+.main-header ul li:hover::before {
+    filter: blur(3px);
+    transform: scale(1.2);
+}
+
+.main-header ul li:nth-child(1):hover::before {
+    box-shadow: 0 0 15px #4267B2;
+}
+
+.main-header ul li:nth-child(2):hover::before {
+    box-shadow: 0 0 15px #1DA1F2;
+}
+
+.main-header ul li:nth-child(3):hover::before {
+    box-shadow: 0 0 15px #E1306C;
+}
+
+.main-header ul li:nth-child(4):hover::before {
+    box-shadow: 0 0 15px #FF0000;
+}
+
+.main-header ul li:nth-child(1):hover {
+    color: #456CBA;
+    box-shadow: 0 0 15px #4267B2;
+    text-shadow: 0 0 15px #4267B2;
+}
+
+.main-header ul li:nth-child(2):hover {
+    color: #26A4F2;
+    box-shadow: 0 0 15px #1DA1F2;
+    text-shadow: 0 0 15px #1DA1F2;
+}
+
+.main-header ul li:nth-child(3):hover {
+    color: #E23670;
+    box-shadow: 0 0 15px #E1306C;
+    text-shadow: 0 0 15px #E1306C;
+}
+
+.main-header ul li:nth-child(4):hover {
+    color: #FF1A1A;
+    box-shadow: 0 0 15px #FF0000;
+    text-shadow: 0 0 15px #FF0000;
+}
+
+.page-header {
+    height: 100vh;
+    max-width: 100%;
+    min-width: 100%;
+
+    color: #FFF;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.shadowing {
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.page-header h1{
+    margin-top: 0;
+}
+
+.page-header p{
+    padding-bottom: 100px;
+}
+
+.header-contenedor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-contenedor img {
+    max-height: 411px;
+}
+
+.header {
+    min-height: 500px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+/* Experiencia */
+main{
+    position: relative;
+}
+
+.experiencia{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid black;
+    padding: 5rem 10rem;
+}
+
+.experiencia:hover {
+    border: 2px solid white;
+}
+
+h2 {
+    background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    
+}
+
+h2:hover {
+    background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
 }
 
 /* Python */
@@ -38,4 +268,10 @@ body {
 .java-header img {
     width: 200px;
     height: 100px;
+}
+
+/* Media Queries */
+
+@media (min-width: 500px) {
+
 }
