@@ -4,6 +4,10 @@ body {
     color: white;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 img {
     max-width: 100%;
 }
@@ -15,6 +19,14 @@ a {
 
 
 /* Utilidades */
+.contenido-centrado {
+    max-width: 800px;
+}
+
+.seccion {
+    margin: 2rem auto;
+}
+
 .centrar-texto{
     text-align: center;
 }
@@ -54,7 +66,6 @@ a {
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(#E73C7E, #23D5AB);
     border-radius: 6px;
-    animation: change 10s ease-in-out infinite;
 }
 
 
@@ -63,6 +74,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.main-header {
+    padding: 10px;
 }
 
 .main-header img {
@@ -240,6 +255,7 @@ a {
 /* Experiencia */
 main{
     position: relative;
+    margin-top: 150px;
 }
 
 .experiencia{
@@ -248,21 +264,24 @@ main{
     margin-top: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border: 2px solid black;
+    border-radius: 10px;
     padding: 5rem 10rem;
 }
 
-h2 {
+.boton {
+    transition: 2.5s;
+    background-position: 0 50%;
     background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
     position: relative;  
 }
 
-h2:hover {
+.boton:hover {
     background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
     position: relative;
-    animation: change 10s ease-in-out infinite;
+    transition: 5s;
+    background-position: 100% 50%;
 }
 
 .cards {
@@ -282,15 +301,23 @@ h2:hover {
 }
 
 .card {
+    transition: 2s;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid #5f5f5f;
     max-width: 400px;
     padding: 50px 80px;
-    min-height: 300px;
+    height: 500px;
     justify-content: space-around;
+    border-radius: 50px;
+    background-color: #353535;
+}
+
+.card:hover {
+    transition: 1s;
+    border: 2px solid white;
 }
 
 .card ul {
@@ -337,6 +364,46 @@ h2:hover {
     width: 200px;
     height: 100px;
 }
+
+/* Contacto */
+
+fieldset {
+    border-radius: 10px;
+}
+
+.centrar-contenido{
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+input:not([type="submit"]), textarea{
+    padding: 10px 0 10px 5px;
+    display: block;
+    width: 100%;
+    background-color: #404040;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+    color: white;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
 
 /* Media Queries */
 
