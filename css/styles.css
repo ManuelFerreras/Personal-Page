@@ -459,4 +459,53 @@ input[type="submit"] {
         font-size: 14px;
         padding: 2rem 4rem;
     }
+
+    .main-header ul li {
+        font-size: 15px;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+
+    .main-header img {
+        height: 54px;
+        width: 54px;
+    }
+
+}
+
+@media(max-height: 900px) {
+    .header-contenedor img {
+        margin-top: 150px;
+    }
+}
+
+@media(max-height: 800px) {
+    .header-contenedor img {
+        margin-top: 250px;
+    }
+
+    .page-header {
+        height: 125vh;
+    }
+}
+
+@media(max-height: 700px) {
+    .header-contenedor img {
+        margin-top: 350px;
+    }
+
+    .page-header {
+        height: 150vh;
+    }
+}
+
+@media(max-height: 600px) {
+    .header-contenedor img {
+        margin-top: 450px;
+    }
+
+    .page-header {
+        height: 175vh;
+    }
 }
