@@ -541,3 +541,34 @@ input[type="submit"] {
         height: 140vh;
     }
 }
+
+@media(Max-height: 550px) {
+    .header-contenedor img {
+        width: 30%;
+        margin-top: 230px;
+    }
+
+    .page-header {
+        height: 160vh;
+    }
+}
+
+@media(Max-height: 400px) {
+    .header-contenedor img {
+        margin-top: 240px;
+    }
+
+    .page-header {
+        height: 170vh;
+    }
+}
+
+@media(Max-height: 350px) {
+    .header-contenedor img {
+        margin-top: 150px;
+    }
+
+    .page-header {
+        height: 300vh;
+    }
+}
