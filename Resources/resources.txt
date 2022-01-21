@@ -1,5 +1,0 @@
-Normalize:
-https://necolas.github.io/normalize.css/
-
-Google Fonts:
-https://fonts.google.com/
